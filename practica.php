@@ -1,12 +1,11 @@
 <?php
 
 const API_URL = "https://whenisthenextmcufilm.com/api";
-#Inicializar nueva sesioón en cURL; ch = cURL HANDLE
 
+//manera para solo hacer un GET de la API
 $result = file_get_contents(API_URL);
 
 $data = json_decode($result, true);
-
 
 //var_dump($data);
 
